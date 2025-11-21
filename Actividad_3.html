@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de prueba de HTML5</title>
+</head>
+
+<body>
+    <h2>Controles de formulario</h2>
+
+    <form method="get" action="">
+        <fieldset>
+            <legend>Datos personales</legend>
+
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required autofocus><br><br>
+
+            <label for="correo">Correo electrónico:</label>
+            <input type="email" id="correo" name="correo" required><br><br>
+
+            <label for="url">URL:</label>
+            <input type="url" id="url" name="url" placeholder="Escribe la URL de tu pág"><br><br>
+
+            <label for="ciudad">Ciudad</label>
+            <select id="ciudad" name="ciudad">
+                <option>ALMERÍA</option>
+                <option>CÁDIZ</option>
+                <option>CÓRDOBA</option>
+                <option>GRANADA</option>
+                <option>HUELVA</option>
+                <option>JAÉN</option>
+                <option>MÁLAGA</option>
+                <option selected>SEVILLA</option>
+            </select>
+        </fieldset>
+
+        <fieldset>
+            <legend>Otros datos</legend>
+
+            <label for="fecha">Fecha:</label>
+            <input type="date" id="fecha" name="fecha"><br><br>
+
+            <label for="tiempo">Tiempo:</label>
+            <input type="time" id="tiempo" name="tiempo"><br><br>
+
+            <label for="fechahora">Fecha y hora:</label>
+            <input type="datetime-local" id="fechahora" name="fechahora"><br><br>
+
+            <label for="mes">Mes:</label>
+            <input type="month" id="mes" name="mes"><br><br>
+
+            <label for="semana">Semana:</label>
+            <input type="week" id="semana" name="semana"><br><br>
+
+            <label for="numero">Número (min -10, max 10):</label>
+            <input type="number" id="numero" name="numero" min="-10" max="10" value="0"><br><br>
+
+            <label for="telefono">Teléfono:</label>
+            <input type="tel" id="telefono" name="telefono"><br><br>
+
+            <label for="busqueda">Término de búsqueda:</label>
+            <input type="search" id="busqueda" name="busqueda"><br><br>
+
+            <label for="color">Color favorito:</label>
+            <input type="color" id="color" name="color" value="#000000">
+        </fieldset>
+
+        <fieldset>
+            <legend>Otros controles</legend>
+
+            <p>Aficiones:
+                <input type="checkbox" id="cine" name="aficiones" value="1" checked> <label for="cine">Cine</label>
+                <input type="checkbox" id="deporte" name="aficiones" value="1"> <label for="deporte">Deporte</label>
+            </p>
+
+            <p>Forma de pago:
+                <input type="radio" id="visa" name="pago" value="V"> <label for="visa">Visa</label>
+                <input type="radio" id="amex" name="pago" value="A"> <label for="amex">American Express</label>
+                <input type="radio" id="mastercard" name="pago" value="M"> <label for="mastercard">MasterCard</label>
+            </p>
+        </fieldset>
+
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Borrar">
+        </p>
+    </form>
+</body>
+
+</html>
